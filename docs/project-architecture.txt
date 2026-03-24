@@ -1,0 +1,3 @@
+TeamHub Web Application Architecture:
+
+Frontend Part:
