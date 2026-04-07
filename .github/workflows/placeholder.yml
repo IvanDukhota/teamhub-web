@@ -96,8 +96,10 @@ jobs:
 
   dev-deploy-log:
     needs: [frontend-check, backend-check]
-    if: github.ref == 'refs/heads/develop'
+    if: |
+      github.ref == 'refs/heads/develop' || 
+      github.base_ref == 'develop'
     runs-on: ubuntu-latest
     steps:
       - name: Log Deploy
-        run: echo "Code merged to develop. Ready for manual staging/testing."
+        run: echo "Эта проверка видит, что мы метим в develop!"
