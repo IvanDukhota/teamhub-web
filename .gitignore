@@ -15,7 +15,8 @@ Thumbs.db
 
 # --- Frontend ---
 node_modules/
-
+.npm
+.yarn/
 frontend/dist/
 frontend/dist-ssr/
 frontend/.eslintcache
@@ -53,6 +54,8 @@ db.sqlite3-journal
 media/
 static/
 staticfiles/
+docker/
+.cache/
 
 # --- Celery & Redis ---
 celerybeat-schedule
